@@ -1,7 +1,7 @@
 from abc import ABC
 from typing import List
 
-from rewards import RewardGenerator
+from bandits.rewards import RewardGenerator
 
 import numpy as np
 
