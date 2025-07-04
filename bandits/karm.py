@@ -20,7 +20,7 @@ class KArmedBandit(ABC):
 
     def query_arm_at( self, i: int, t: float ) -> float:
         return self.rewards[i].reward_at(t)
-    
+
     def optimal_arm( self ) -> float:
         rewards = [ r.get_value() for r in self.rewards ]
         return np.argmax( rewards )
