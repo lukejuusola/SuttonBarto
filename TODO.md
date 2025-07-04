@@ -6,4 +6,4 @@ Chapter 2: Select Problems
 - p36. 2.8
 - p44. 2.11
 
-Chapter 2. Summary and Takeaways
+Chapter 2. Summary and Conclusions
