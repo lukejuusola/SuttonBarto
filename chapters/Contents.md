@@ -6,6 +6,6 @@
 - [2.5: Tracking a Nonstationary Problem](chapter2/NonstationaryExp.ipynb)
 - [2.6: Optimistic Initial Value](chapter2/OptimisticGreedyExp.ipynb)
 - [2.7: Upper-Confidence-Bound Action Selection](chapter2/UCBExp.ipynb)
-- 2.8
-- 2.9
-- 2.10
+- 2.8: Gradient Bandit Algorithms
+- 2.9: Associative Search (Contextual Bandits)
+- 2.10: Summary
