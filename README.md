@@ -12,6 +12,6 @@ A hands-on approach to Reinforcement Learning by Sutton and Barto
 - [2.7: Upper-Confidence-Bound Action Selection](chapters/chapter2/UCBExp.ipynb)
 - [2.8: Gradient Bandit Algorithms](chapters/chapter2/GradientExp.ipynb)
 - 2.9: Associative Search (Contextual Bandits)
-- 2.10: Summary
+- [2.10: Summary](chapters/chapter2/ParameterStudy.ipynb)
 - Summary + Conclusions
 - Select Problems
