@@ -13,3 +13,4 @@ A hands-on approach to Reinforcement Learning by Sutton and Barto
 - [2.8: Gradient Bandit Algorithms](chapters/chapter2/GradientExp.ipynb)
 - 2.9: Associative Search (Contextual Bandits)
 - 2.10: Summary
+- Select Problems
