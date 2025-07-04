@@ -9,3 +9,4 @@
 - [2.8: Gradient Bandit Algorithms](chapter2/GradientExp.ipynb)
 - 2.9: Associative Search (Contextual Bandits)
 - 2.10: Summary
+- Select Problems
