@@ -1,0 +1,11 @@
+### Chapter 2
+- 2.1: A $k$-armed Bandit Problem
+- 2.2: Action-Value Methods
+- [2.3: The 10-armed Testbed](chapter2/EpsilonGreedyExp.ipynb)
+- 2.4: Incremental Implementation
+- [2.5: Tracking a Nonstationary Problem](chapter2/NonstationaryExp.ipynb)
+- [2.6: Optimistic Initial Value](chapter2/OptimisticGreedyExp.ipynb)
+- [2.7: Upper-Confidence-Bound Action Selection](chapter2/UCBExp.ipynb)
+- 2.8
+- 2.9
+- 2.10
