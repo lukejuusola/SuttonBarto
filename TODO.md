@@ -18,7 +18,24 @@ The K-Armed Bandit Problem is the stateless reinforcment learning problem and Su
     - You can define a stochastic (softmax) policy where weights are given by preferences rather than reward estimates. Using an modern SGD, we can optimize this directly, and I suspect this will come in handy once we're considering DeepRL. 
 
 ### Chapter 3
-Exercises
+##### Defintions
+- Markov Decision Process (informal):
+- Trajectory:
+- Expected Rewards: Given $\gamma \in [0, 1]$, $G_t = \sum_0^\infty \gamma^k R_{t + k + 1} = R_{t + 1} + \gamma R_{t + 2} + \gamma^2 R_{t + 3} ...$.
+- Value Function: Given a policy $\pi$, $v_\pi(s) = \mathbb E_\pi[G_t|S_t=s]$
+- Action-value function ( Quality ): Given a policy $\pi$, $q_\pi(s, a) = \mathbb E_\pi[G_t|S_t=s,A_t=a]$.
+- Policy Partial Ordering:
+- Optimal Policy: 
+
+Reward Hypothesis (p53.): That all of what we mean by goals and purposes can be well thought of as the maximazation of the expected value of the cumulative sum of a recieved scalar signal ( called reward ).
+
+Intuitions
+
+Bellman Equations
+
+##### Exercises
+
+##### Select Problems
 - p56. 3.6
 - p56. 3.10
     - $G = \sum_0^\infty \gamma^k$
@@ -37,7 +54,7 @@ Exercises
 - p61. 3.17 Bellman Equation for $q_\pi$:
     - $q_\pi(s, a) = \mathbb E_\pi[ G_t | S_t=s,A_t=a ] = \mathbb E_\pi[ R_t + \gamma G_{t+1} | S_t=s,A_t=a ]$
     - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma v_\pi(s') )$
-    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma \sum_{a'} \pi(a'|s') q_\pi(s', a') )$
+    - $= \sum_{s'} \sum_r p(s', r | s, a) [ r + \gamma \sum_{a'} \pi(a'|s') q_\pi(s', a') ]$
 - p62. 3.18
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb E_\pi[ G_t | S_t=s,A_t=a ]$
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
@@ -51,6 +68,3 @@ Exercises
         - $\gamma = 0.5: v = \sum_0^\infty (0 \gamma^{2k}) + ( 2 \gamma^{2k+1})) = 2 \gamma \sum_0^\infty (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1}{1 - .75} = 8 \gamma = 4$
         - $\gamma = 0.9: v = \sum_0^\infty (0 \gamma^{2k}) + ( 2 \gamma^{2k+1})) = 2 \gamma \sum_0^\infty (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1.8}{1 - .81} = 9.47$
 - p67. 3.25,3.26,3.27,3.28,3.29 
-
-Select Problems
--
