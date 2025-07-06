@@ -36,8 +36,8 @@ Exercises
 - p61. 3.15, 3.16
 - p61. 3.17 Bellman Equation for $q_\pi$:
     - $q_\pi(s, a) = \mathbb E_\pi[ G_t | S_t=s,A_t=a ] = \mathbb E_\pi[ R_t + \gamma G_{t+1} | S_t=s,A_t=a ]$
-    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma v_pi(s') )$
-    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma \sum_{a'} \pi(s', a') q_\pi(s', a') )$
+    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma v_\pi(s') )$
+    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma \sum_{a'} \pi(a'|s') q_\pi(s', a') )$
 - p62. 3.18
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb E_\pi[ G_t | S_t=s,A_t=a ]$
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
