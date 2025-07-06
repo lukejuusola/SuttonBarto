@@ -21,7 +21,7 @@ The K-Armed Bandit Problem is the stateless reinforcment learning problem and Su
 ##### Defintions
 - Markov Decision Process (informal):
 - Trajectory:
-- Expected Rewards: Given $\gamma \in [0, 1]$, $G_t = \sum_0^\infty \gamma^k R_{t + k + 1} = R_{t + 1} + \gamma R_{t + 2} + \gamma^2 R_{t + 3} ...$.
+- Expected Rewards: Given $\gamma \in [0, 1]$, $G_t = \sum_0^\infty \gamma^k R_{t + k + 1} = R_{t + 1} + \gamma R_{t + 2} + \gamma^2 R_{t + 3} ...$
 - Value Function: Given a policy $\pi$, $v_\pi(s) = \mathbb E_\pi[G_t|S_t=s]$
 - Action-value function ( Quality ): Given a policy $\pi$, $q_\pi(s, a) = \mathbb E_\pi[G_t|S_t=s,A_t=a]$.
 - Policy Partial Ordering:
