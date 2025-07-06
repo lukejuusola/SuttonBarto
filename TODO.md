@@ -31,7 +31,7 @@ Exercises
         - $v_\pi(s) = \mathbb E_\pi[G_t | S_t = s] = \sum_{a \in A} \pi(a|s)q_\pi(s, a)$
     - 3.13
         - $q_\pi(s, a) = \mathbb E_pi[G_t|S_t=s,A_t=a] = \mathbb E_pi[R_t + \gamma G_{t + 1}|S_t=s,A_t=a]$
-        - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma \mathbb \mathbb E_\pi_\pi [G_{t+1} | S_{t+1} = s'] )$
+        - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma \mathbb E_\pi_\pi [G_{t+1} | S_{t+1} = s'] )$
         - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma v_\pi( s' ) )$
 - p61. 3.15, 3.16
 - p61. 3.17 Bellman Equation for $q_\pi$:
