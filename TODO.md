@@ -43,13 +43,13 @@ Exercises
     - $v_\pi(s) = \mathbb_\pi E[ G_t| S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
 - p66. 3.22
     - $\pi = left$
-        - $\gamma = 0.0. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = 1$
-        - $\gamma = 0.5. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = \sum_0^\infty * (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .75} = 4$
-        - $\gamma = 0.9. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = \sum_0^\infty * (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .81} = 5.26$
+        - $\gamma = 0.0. v = \sum_0^\infty (1 \gamma^{2k}) + ( 0 \gamma^{2k+1})) = 1$
+        - $\gamma = 0.5. v = \sum_0^\infty (1 \gamma^{2k}) + ( 0 \gamma^{2k+1})) = \sum_0^\infty (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .75} = 4$
+        - $\gamma = 0.9. v = \sum_0^\infty (1 \gamma^{2k}) + ( 0 \gamma^{2k+1})) = \sum_0^\infty (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .81} = 5.26$
     - $\pi = right$
-        - $\gamma = 0.0. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 0$
-        - $\gamma = 0.5. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 2 \gamma \sum_0^\infty * (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1}{1 - .75} = 8 \gamma = 4$
-        - $\gamma = 0.9. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 2 \gamma \sum_0^\infty * (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1.8}{1 - .81} = 9.47$
+        - $\gamma = 0.0. v = \sum_0^\infty (0 \gamma^{2k}) + ( 2 \gamma^{2k+1})) = 0$
+        - $\gamma = 0.5. v = \sum_0^\infty (0 \gamma^{2k}) + ( 2 \gamma^{2k+1})) = 2 \gamma \sum_0^\infty (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1}{1 - .75} = 8 \gamma = 4$
+        - $\gamma = 0.9. v = \sum_0^\infty (0 \gamma^{2k}) + ( 2 \gamma^{2k+1})) = 2 \gamma \sum_0^\infty (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1.8}{1 - .81} = 9.47$
 - p67. 3.25,3.26,3.27,3.28,3.29 
 
 Select Problems
