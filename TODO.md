@@ -59,6 +59,7 @@ Bellman Equations
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb E_\pi[ G_t | S_t=s,A_t=a ]$
     - $v_\pi(s) = \mathbb E_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
 - p66. 3.22
+    - For ease of notation, let $0^0 = 1$
     - $\pi = left$
         - $\gamma = 0.0: v = \sum_0^\infty (1 \gamma^{2k}) + ( 0 \gamma^{2k+1})) = 1$
         - $\gamma = 0.5: v = \sum_0^\infty (1 \gamma^{2k}) + ( 0 \gamma^{2k+1})) = \sum_0^\infty (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .75} = 4$
