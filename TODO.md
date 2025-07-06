@@ -21,10 +21,35 @@ The K-Armed Bandit Problem is the stateless reinforcment learning problem and Su
 Exercises
 - p56. 3.6
 - p56. 3.10
+    - $G = \sum_0^\infty \gamma^k$
+    - $1 + \gamma G = \gamma^0 + \sum_1^\infty \gamma^k = G$
+    - $G = \frac{1}{1 - \gamma}$
 - p58. 3.11, 3.12, 3.13
-- p61. 3.15, 3.16, 3.17
+    - 3.11
+        - $\mathbb_\pi[ R | S_t=s, A_t=a ] = \sum_{s'} \sum_r p(s', r | s, a) * r$
+    - 3.12
+        - $v_\pi(s) = \mathbb E_\pi[G_t | S_t = s] = \sum_{a \in A} \pi(a|s)q_\pi(s, a)$
+    - 3.13
+        - $q_\pi(s, a) = \mathbb E_pi[G_t|S_t=s,A_t=a] = \mathbb E_pi[R_t + \gamma G_{t + 1}|S_t=s,A_t=a]$
+        - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma \mathbb E_\pi [G_{t+1} | S_{t+1} = s'] )$
+        - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma v_\pi( s' ) )$
+- p61. 3.15, 3.16
+- p61. 3.17 Bellman Equation for $q_\pi$:
+    - $q_\pi(s, a) = \mathbb_\pi[ G_t | S_t=s,A_t=a ] = \mathbb_\pi[ R_t + \gamma G_{t+1} | S_t=s,A_t=a ]$
+    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma v_pi(s') )$
+    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma \sum_{a'} \pi(s', a') q_\pi(s', a') )$
 - p62. 3.18
+    - $v_\pi(s) = \mathbb_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb_\pi E[ G_t | S_t=s,A_t=a ]$
+    - $v_\pi(s) = \mathbb_\pi[ G_t| S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
 - p66. 3.22
+    - $\pi = left$
+        - $\gamma = 0.0. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = 1$
+        - $\gamma = 0.5. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = \sum_0^\infty * (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .75} = 4$
+        - $\gamma = 0.9. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = \sum_0^\infty * (\gamma^2)^k = \frac{1}{1 - \gamma^2} = \frac{1}{1 - .81} = 5.26$
+    - $\pi = right$
+        - $\gamma = 0.0. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 0$
+        - $\gamma = 0.5. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 2 \gamma \sum_0^\infty * (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1}{1 - .75} = 8 \gamma = 4$
+        - $\gamma = 0.9. v = \sum_0^\infty * (0 * \gamma^{2k}) + ( 2 * \gamma^{2k+1})) = 2 \gamma \sum_0^\infty * (\gamma^2)^k = \frac{2 \gamma}{1 - \gamma^2} = \frac{1.8}{1 - .81} = 9.47$
 - p67. 3.25,3.26,3.27,3.28,3.29 
 
 Select Problems
