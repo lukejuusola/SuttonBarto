@@ -26,7 +26,7 @@ Exercises
     - $G = \frac{1}{1 - \gamma}$
 - p58. 3.11, 3.12, 3.13
     - 3.11
-        - $\mathbb_\pi[ R | S_t=s, A_t=a ] = \sum_{s'} \sum_r p(s', r | s, a) * r$
+        - $\mathbb_\pi E[ R | S_t=s, A_t=a ] = \sum_{s'} \sum_r p(s', r | s, a) * r$
     - 3.12
         - $v_\pi(s) = \mathbb E_\pi[G_t | S_t = s] = \sum_{a \in A} \pi(a|s)q_\pi(s, a)$
     - 3.13
@@ -35,12 +35,12 @@ Exercises
         - $= \sum_{s'} \sum_r p(s', r | s, a ) ( r + \gamma v_\pi( s' ) )$
 - p61. 3.15, 3.16
 - p61. 3.17 Bellman Equation for $q_\pi$:
-    - $q_\pi(s, a) = \mathbb_\pi[ G_t | S_t=s,A_t=a ] = \mathbb_\pi[ R_t + \gamma G_{t+1} | S_t=s,A_t=a ]$
-    - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma v_pi(s') )$
+    - $q_\pi(s, a) = \mathbb_\pi E[ G_t | S_t=s,A_t=a ] = \mathbb_\pi E[ R_t + \gamma G_{t+1} | S_t=s,A_t=a ]$
+    - $= \sum_{s'} \sum_r p(s',  Er | s, a) ( r + \gamma v_pi(s') )$
     - $= \sum_{s'} \sum_r p(s', r | s, a) ( r + \gamma \sum_{a'} \pi(s', a') q_\pi(s', a') )$
 - p62. 3.18
-    - $v_\pi(s) = \mathbb_\pi[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb_\pi E[ G_t | S_t=s,A_t=a ]$
-    - $v_\pi(s) = \mathbb_\pi[ G_t| S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
+    - $v_\pi(s) = \mathbb_\pi E[ G_t | S_t=s ] = \sum_a \pi(a|s) \mathbb_\pi E[ G_t | S_t=s,A_t=a ]$
+    - $v_\pi(s) = \mathbb_\pi E[ G_t| S_t=s ] = \sum_a \pi(a|s) q_\pi(s, a)$
 - p66. 3.22
     - $\pi = left$
         - $\gamma = 0.0. v = \sum_0^\infty * (1 * \gamma^{2k}) + ( 0 * \gamma^{2k+1})) = 1$
