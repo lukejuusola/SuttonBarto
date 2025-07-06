@@ -15,3 +15,15 @@ A hands-on approach to Reinforcement Learning by Sutton and Barto
 - [2.10: Summary](chapters/chapter2/ParameterStudy.ipynb)
 - Summary + Conclusions
 - Select Problems
+
+### Chapter 3. Finite Markov Decision Processes
+- 3.1: The Agent-Enviornment Interface
+- 3.2: Goals and Rewards
+- 3.3: Returns and Episodes
+- 3.4: Unified Notation for Episodic and Continuing Tasks
+- 3.5: Policies and Value Functions
+- 3.6: Optimal Policies and Optimal Value Functions
+- 3.7: Optimality and Approximation
+- 3.8: Summary
+- Summary + Conclusions
+- Select Problems
